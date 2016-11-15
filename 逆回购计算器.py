@@ -42,14 +42,14 @@ def getRecord():
 
         countValidate=False;
         while(countValidate is False):
-                print("输入购买数量:");
+                print("输入购买数量（Exp:10表示购买1000元）:");
                 countInput=int(input());
-                if(countInput>0 and countInput % 1000==0):
+                if(countInput>0):
                         countValidate=True;
-                        inputCount=countInput;
+                        inputCount=countInput*100;
                         break;
                 else:
-                        print("数量错误。数量必须为1000的倍数！");
+                        print("数量错误！");
 
         countDate=False;
         while(countDate is False):
